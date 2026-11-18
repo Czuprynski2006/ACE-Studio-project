@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b10">
+    <meta name="description" content="Skonfiguruj projekt strony WWW, grafiki lub montażu wideo w ACE Studio i poznaj orientacyjną sumę wyceny.">
+    <meta name="robots" content="index, follow">
+    <title>Kalkulator wyceny usług — ACE Studio</title>
+    <link rel="canonical" href="https://www.ace-studio.pl/wycena/">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="ACE Studio">
+    <meta property="og:url" content="https://www.ace-studio.pl/wycena/">
+    <meta property="og:title" content="Kalkulator wyceny usług — ACE Studio">
+    <meta property="og:description" content="Skonfiguruj projekt strony WWW, grafiki lub montażu wideo i poznaj orientacyjną sumę wyceny.">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="../style.css?v=20261121">
+        <link rel="stylesheet" href="wycena.css?v=20261104">
+        <script src="../script.js?v=20261104" defer></script>
+        <script type="module" src="wycena.js?v=20261104"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="site-header" id="top">
+        <div class="navbar">
+            <a class="brand" href="../#top" aria-label="ACE Studio — strona główna">
+                <img src="../ACE%20Studio%20LOGO.png" alt="ACE Studio" width="2168" height="725">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Nawigacja główna">
+                <a href="../#o-nas">O nas</a>
+                <a href="../#uslugi">Usługi</a>
+                <a href="../#realizacje">Realizacje</a>
+                <a href="../faq/">FAQ</a>
+                <a href="../#kontakt">Kontakt</a>
+                <a class="contact-link" href="./">
+                    Konfigurator
+                    <svg aria-hidden="true" viewBox="0 0 16 16" fill="none">
+                        <path d="M3.5 12.5 12.5 3.5M4.5 3.5h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1" class="quote-main">
+        <section class="quote-picker" aria-labelledby="quote-title">
+            <div class="quote-decoration quote-decoration-one" aria-hidden="true"></div>
+            <div class="quote-decoration quote-decoration-two" aria-hidden="true"></div>
+
+            <div class="quote-content">
+                <a class="quote-back-link" href="../#top">
+                    <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                        <path d="m12.5 4.5-6 5.5 6 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Strona główna ACE Studio
+                </a>
+
+                <div class="quote-step" aria-label="Krok 1 z 3" id="quote-progress">
+                    <div class="quote-step-heading">
+                        <span class="quote-step-label">Krok 01</span>
+                        <span class="quote-step-title">Wybór usługi</span>
+                    </div>
+                    <div class="quote-step-track" role="progressbar" aria-label="Postęp konfiguracji" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1">
+                        <span></span>
+                    </div>
+                </div>
+
+                <section class="quote-screen" id="quote-service-screen" aria-labelledby="quote-title">
+                    <header class="quote-heading">
+                        <p class="quote-eyebrow"><span aria-hidden="true"></span> Kalkulator ACE Studio</p>
+                        <h1 id="quote-title">Jaki projekt<br><span>tworzymy?</span></h1>
+                        <p class="quote-intro">
+                            Wybierz usługę, aby rozpocząć konfigurację jej zakresu.
+                        </p>
+                    </header>
+
+                    <fieldset class="quote-options">
+                        <legend>Wybierz usługę</legend>
+                        <label class="quote-service-card">
+                            <input type="radio" name="service" value="website">
+                            <span class="quote-service-icon" aria-hidden="true">
+                                <svg viewBox="0 0 40 40" fill="none">
+                                    <rect x="5.5" y="7" width="29" height="25" rx="2.5" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="M5.5 13h29M10 10h.01M13.5 10h.01M17 10h.01M13 18h14M13 22h9M13 26h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="quote-service-copy">
+                                <span class="quote-service-kicker">01 / Digital</span>
+                                <span class="quote-service-title">Strona internetowa</span>
+                                <span class="quote-service-description">Od strony firmowej po rozbudowany sklep online.</span>
+                            </span>
+                            <span class="quote-service-arrow" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </label>
+
+                        <label class="quote-service-card">
+                            <input type="radio" name="service" value="graphic">
+                            <span class="quote-service-icon" aria-hidden="true">
+                                <svg viewBox="0 0 40 40" fill="none">
+                                    <path d="M23.7 6.5 33.5 16.3 18 31.8l-9.8 1.7L10 23.7 23.7 6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                    <path d="m20.6 9.6 9.8 9.8M8.8 33.5h23M12 25.2l7.2 7.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="m27.5 6 1.1-2M33.5 12l2-1.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <span class="quote-service-copy">
+                                <span class="quote-service-kicker">02 / Design</span>
+                                <span class="quote-service-title">Projekt graficzny</span>
+                                <span class="quote-service-description">Logo, identyfikacja i materiały reklamowe.</span>
+                            </span>
+                            <span class="quote-service-arrow" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </label>
+
+                        <label class="quote-service-card">
+                            <input type="radio" name="service" value="video">
+                            <span class="quote-service-icon" aria-hidden="true">
+                                <svg viewBox="0 0 40 40" fill="none">
+                                    <rect x="6" y="11" width="21" height="19" rx="2.5" stroke="currentColor" stroke-width="1.6"/>
+                                    <path d="m27 17 7-4v15l-7-4M17 16.5l6 4.1-6 4.1v-8.2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="quote-service-copy">
+                                <span class="quote-service-kicker">03 / Motion</span>
+                                <span class="quote-service-title">Montaż wideo</span>
+                                <span class="quote-service-description">Reels, reklamy i filmy promocyjne.</span>
+                            </span>
+                            <span class="quote-service-arrow" aria-hidden="true">
+                                <svg viewBox="0 0 20 20" fill="none">
+                                    <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </label>
+                    </fieldset>
+
+                    <p class="quote-selection-status" id="quote-selection-status" aria-live="polite">
+                        Wybierz usługę, aby przejść dalej.
+                    </p>
+
+                    <div class="quote-actions" id="quote-service-actions" hidden>
+                        <button class="quote-button quote-button-primary" id="quote-continue" type="button" hidden>
+                            Konfiguruj stronę WWW
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="quote-button quote-button-primary" id="quote-graphic-continue" type="button" hidden>
+                            Konfiguruj projekt graficzny
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="quote-button quote-button-primary" id="quote-video-continue" type="button" hidden>
+                            Konfiguruj montaż wideo
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <p class="quote-disclaimer">
+                        Na ostatnim ekranie zobaczysz zestawienie: cenę bazową i dopłaty za wybrane opcje. Wycena nie stanowi wiążącej oferty.
+                </section>
+
+                <section class="quote-screen quote-website-screen" id="quote-website-screen" aria-labelledby="website-title" hidden>
+                    <header class="quote-heading">
+                        <p class="quote-eyebrow"><span aria-hidden="true"></span> Konfiguracja strony WWW</p>
+                        <h2 id="website-title" tabindex="-1">Opowiedz nam<br><span>o swoim projekcie.</span></h2>
+                        <p class="quote-intro">
+                            Każdy pakiet obejmuje responsywność, podstawowe SEO techniczne i standardowy projekt
+                            oparty na ustalonym układzie. Zaznacz potrzebne rozszerzenia — odpowiedzi pozostaną
+                            zapisane po powrocie do wyboru usługi.
+                        </p>
+                    </header>
+
+                    <div class="quote-website-fields">
+                        <fieldset class="quote-question quote-type-question">
+                            <legend>
+                                <span class="quote-question-number">01</span>
+                                Jaki rodzaj strony planujesz?
+                            </legend>
+                            <div class="quote-type-options">
+                                <label class="quote-type-card">
+                                    <input type="radio" name="website-type" value="landing" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Landing page</span>
+                                        <span class="quote-type-card-description">Jedna strona skupiona na konkretnej ofercie lub celu.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="website-type" value="business" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Strona firmowa</span>
+                                        <span class="quote-type-card-description">Oferta, informacje o firmie i kontakt w czytelnym układzie.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="website-type" value="expanded" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Rozbudowana witryna</span>
+                                        <span class="quote-type-card-description">Więcej sekcji, podstron lub niestandardowych treści.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="website-type" value="store" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Sklep internetowy</span>
+                                        <span class="quote-type-card-description">Witryna z katalogiem produktów i sprzedażą online.</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="quote-question-grid">
+                            <div class="quote-question quote-pages-question">
+                                <label class="quote-field-label" for="website-pages">
+                                    <span class="quote-question-number">02</span>
+                                    Ile podstron planujesz?
+                                </label>
+                                <p class="quote-field-help" id="website-pages-help">Podaj liczbę podstron. Zakres w cenie bazowej zależy od wybranego rodzaju strony.</p>
+                                <div class="quote-number-field">
+                                    <input id="website-pages" name="website-pages" type="number" min="1" max="100" step="1" inputmode="numeric" aria-describedby="website-pages-help website-validation-note" placeholder="Np. 5" required>
+                                    <span>podstron</span>
+                                </div>
+                                <p class="quote-validation-note" id="website-validation-note" role="status" hidden></p>
+
+                                <div class="quote-question quote-products-question" id="website-products-field" hidden>
+                                    <label class="quote-field-label" for="website-products">
+                                        <span class="quote-question-number">05</span>
+                                        Ile produktów obejmuje sklep?
+                                    </label>
+                                    <p class="quote-field-help" id="website-products-help">10 standardowych produktów jest wliczonych w cenę sklepu.</p>
+                                    <div class="quote-number-field">
+                                        <input id="website-products" name="website-products" type="number" min="1" max="1000" step="1" inputmode="numeric" value="10" aria-describedby="website-products-help website-validation-note">
+                                        <span>produktów</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <fieldset class="quote-question quote-features-question">
+                                <legend>
+                                    <span class="quote-question-number">03</span>
+                                    Jakie elementy uwzględnić?
+                                </legend>
+                                <div class="quote-check-options">
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="website-feature" value="custom-design">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Indywidualny projekt graficzny</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="website-feature" value="cms">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>CMS do samodzielnej edycji treści</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="website-feature" value="contact-form">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Formularz kontaktowy</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="website-feature" value="seo">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Rozszerzona optymalizacja SEO</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" id="website-languages-enabled" name="website-feature" value="languages">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Dodatkowe wersje językowe</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" id="website-content-enabled" name="website-feature" value="content">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Przygotowanie treści na stronę</span>
+                                    </label>
+                                </div>
+                                <p class="quote-field-help quote-compatibility-note" id="website-cms-note" hidden>
+                                    Standardowy system zarządzania produktami i zamówieniami jest już wliczony w cenę sklepu.
+                                </p>
+                                <div class="quote-language-count" id="quote-language-count" hidden>
+                                    <label for="website-language-count">Ile dodatkowych języków?</label>
+                                    <input id="website-language-count" name="website-language-count" type="number" min="1" max="100" step="1" inputmode="numeric" value="1" aria-describedby="website-validation-note" disabled>
+                                </div>
+                                <div class="quote-language-count quote-content-count" id="quote-content-count" hidden>
+                                    <label for="website-content-pages">Dla ilu podstron przygotować treści?</label>
+                                    <input id="website-content-pages" name="website-content-pages" type="number" min="1" max="100" step="1" inputmode="numeric" value="1" aria-describedby="website-validation-note" disabled>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="quote-question quote-additional-question">
+                            <label class="quote-field-label" for="website-additional">
+                                <span class="quote-question-number">04</span>
+                                Dodatkowe funkcjonalności <span class="quote-optional-label">opcjonalnie</span>
+                            </label>
+                            <p class="quote-field-help">Opisz krótko, co jeszcze powinna robić strona, np. rezerwacje lub integracja z zewnętrznym systemem.</p>
+                            <textarea id="website-additional" name="website-additional" rows="3" maxlength="1000" aria-describedby="website-custom-functionality-note" placeholder="Opisz swoje potrzeby..."></textarea>
+                            <p class="quote-validation-note quote-custom-functionality-note" id="website-custom-functionality-note" role="status" hidden>
+                                Opisane funkcjonalności wymagają indywidualnej wyceny i nie są automatycznie doliczane do sumy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="quote-disclaimer">
+                        Suma widoczna na dole jest orientacyjna i nie stanowi wiążącej oferty.
+                    </p>
+                    <div class="quote-actions quote-actions-between">
+                        <button class="quote-button quote-button-secondary" id="quote-back" type="button">
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.5 10h-11m4.5 4.5L4.5 10 9 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Wróć do wyboru usługi
+                        </button>
+                        <button class="quote-button quote-button-primary quote-summary-open" type="button" data-service="website">
+                            Podsumuj projekt
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="quote-screen quote-website-screen" id="quote-graphic-screen" aria-labelledby="graphic-title" hidden>
+                    <header class="quote-heading">
+                        <p class="quote-eyebrow"><span aria-hidden="true"></span> Konfiguracja projektu graficznego</p>
+                        <h2 id="graphic-title" tabindex="-1">Jaki projekt<br><span>graficzny tworzysz?</span></h2>
+                        <p class="quote-intro">
+                            Wybierz rodzaj projektu i określ potrzebny zakres. To wstępne informacje —
+                            szczegóły dopracujemy wspólnie.
+                        </p>
+                    </header>
+
+                    <div class="quote-website-fields">
+                        <fieldset class="quote-question quote-type-question">
+                            <legend>
+                                <span class="quote-question-number">01</span>
+                                Jakiego projektu potrzebujesz?
+                            </legend>
+                            <div class="quote-type-options quote-graphic-type-options">
+                                <label class="quote-type-card">
+                                    <input type="radio" name="graphic-type" value="logo" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Logo</span>
+                                        <span class="quote-type-card-description">Znak, który pomoże rozpoznać Twoją markę.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="graphic-type" value="identity" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Identyfikacja wizualna</span>
+                                        <span class="quote-type-card-description">Spójny zestaw elementów i zasad wizerunku marki.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="graphic-type" value="business-card" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Wizytówka</span>
+                                        <span class="quote-type-card-description">Projekt do druku i wygodnego przekazywania kontaktu.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="graphic-type" value="flyer" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Ulotka</span>
+                                        <span class="quote-type-card-description">Materiał promocyjny do druku lub dystrybucji cyfrowej.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="graphic-type" value="banner" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Baner reklamowy</span>
+                                        <span class="quote-type-card-description">Grafika do kampanii internetowej lub ekspozycji.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="graphic-type" value="social-media" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Grafiki do social media</span>
+                                        <span class="quote-type-card-description">Materiały dopasowane do Twoich kanałów społecznościowych.</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="quote-question quote-concepts-question">
+                            <legend>
+                                <span class="quote-question-number">02</span>
+                                Ile propozycji projektu przygotować?
+                            </legend>
+                            <p class="quote-field-help">Pierwsza propozycja jest w cenie bazowej. Każda kolejna zwiększa cenę bazową o 50%.</p>
+                            <div class="quote-concept-options">
+                                <label class="quote-concept-card">
+                                    <input type="radio" name="graphic-concepts" value="1" required>
+                                    <span class="quote-concept-number">1</span>
+                                    <span class="quote-concept-label">propozycja</span>
+                                </label>
+                                <label class="quote-concept-card">
+                                    <input type="radio" name="graphic-concepts" value="2" required>
+                                    <span class="quote-concept-number">2</span>
+                                    <span class="quote-concept-label">propozycje</span>
+                                </label>
+                                <label class="quote-concept-card">
+                                    <input type="radio" name="graphic-concepts" value="3" required>
+                                    <span class="quote-concept-number">3</span>
+                                    <span class="quote-concept-label">propozycje</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="quote-question">
+                            <legend>
+                                <span class="quote-question-number">03</span>
+                                Jaki poziom złożoności przewidujesz?
+                            </legend>
+                            <p class="quote-field-help">Wybierz orientacyjny zakres prac — złożoność wpływa na szacunkową sumę.</p>
+                            <div class="quote-complexity-options">
+                                <label class="quote-check-option">
+                                    <input type="radio" name="graphic-complexity" value="simple" required>
+                                    <span class="quote-radio-mark" aria-hidden="true"></span>
+                                    <span>Prosty — czytelna forma, niewiele elementów</span>
+                                </label>
+                                <label class="quote-check-option">
+                                    <input type="radio" name="graphic-complexity" value="standard" required>
+                                    <span class="quote-radio-mark" aria-hidden="true"></span>
+                                    <span>Standardowy — kilka elementów i dopracowany układ</span>
+                                </label>
+                                <label class="quote-check-option">
+                                    <input type="radio" name="graphic-complexity" value="advanced" required>
+                                    <span class="quote-radio-mark" aria-hidden="true"></span>
+                                    <span>Rozbudowany — złożona kompozycja lub wiele szczegółów</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="quote-question-grid quote-graphic-question-grid">
+                            <fieldset class="quote-question">
+                                <legend>
+                                    <span class="quote-question-number">04</span>
+                                    Przygotowanie i dodatkowe warianty
+                                </legend>
+                                <div class="quote-check-options">
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="graphic-option" value="print-ready">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Przygotowanie plików do druku</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="graphic-option" value="digital-formats">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Dodatkowe formaty do publikacji cyfrowej</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="graphic-option" value="print-formats">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Warianty rozmiaru lub wersje do druku</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="checkbox" name="graphic-option" value="source-files">
+                                        <span class="quote-checkmark" aria-hidden="true"></span>
+                                        <span>Pliki źródłowe projektu</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <p class="quote-disclaimer">
+                        Suma widoczna na dole jest orientacyjna i nie stanowi wiążącej oferty.
+                    </p>
+                    <div class="quote-actions quote-actions-between">
+                        <button class="quote-button quote-button-secondary" id="quote-graphic-back" type="button">
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.5 10h-11m4.5 4.5L4.5 10 9 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Wróć do wyboru usługi
+                        </button>
+                        <button class="quote-button quote-button-primary quote-summary-open" type="button" data-service="graphic">
+                            Podsumuj projekt
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="quote-screen quote-website-screen" id="quote-video-screen" aria-labelledby="video-title" hidden>
+                    <header class="quote-heading">
+                        <p class="quote-eyebrow"><span aria-hidden="true"></span> Konfiguracja montażu wideo</p>
+                        <h2 id="video-title" tabindex="-1">Jaki materiał<br><span>przygotowujemy?</span></h2>
+                        <p class="quote-intro">
+                            Określ rodzaj i podstawowy zakres filmu. Odpowiedzi są wstępne — szczegóły
+                            projektu dopracujemy wspólnie.
+                        </p>
+                    </header>
+
+                    <div class="quote-website-fields">
+                        <fieldset class="quote-question quote-type-question">
+                            <legend>
+                                <span class="quote-question-number">01</span>
+                                Jaki rodzaj filmu chcesz zmontować?
+                            </legend>
+                            <div class="quote-type-options quote-video-type-options">
+                                <label class="quote-type-card">
+                                    <input type="radio" name="video-type" value="reel" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Reels</span>
+                                        <span class="quote-type-card-description">Krótki, dynamiczny materiał do social media.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="video-type" value="tiktok" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">TikTok</span>
+                                        <span class="quote-type-card-description">Pionowe wideo przygotowane pod format platformy.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="video-type" value="advert" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Reklama</span>
+                                        <span class="quote-type-card-description">Materiał promujący produkt, usługę lub markę.</span>
+                                    </span>
+                                </label>
+                                <label class="quote-type-card">
+                                    <input type="radio" name="video-type" value="promo" required>
+                                    <span class="quote-type-card-content">
+                                        <span class="quote-type-card-title">Film promocyjny</span>
+                                        <span class="quote-type-card-description">Dłuższa forma przedstawiająca firmę lub ofertę.</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="quote-question-grid quote-graphic-question-grid">
+                            <fieldset class="quote-question">
+                                <legend>
+                                    <span class="quote-question-number">02</span>
+                                    Jak długa ma być gotowa wersja?
+                                </legend>
+                                <div class="quote-check-options">
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-duration" value="up-to-15" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>Do 15 sekund</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-duration" value="15-30" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>15–30 sekund</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-duration" value="30-60" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>30–60 sekund</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-duration" value="over-60" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>Ponad 60 sekund</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="quote-question">
+                                <legend>
+                                    <span class="quote-question-number">03</span>
+                                    Ile materiału źródłowego masz?
+                                </legend>
+                                <p class="quote-field-help">Chodzi o łączny czas surowych nagrań przekazanych do montażu.</p>
+                                <div class="quote-check-options">
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-footage" value="up-to-15" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>Do 15 minut</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-footage" value="15-60" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>15–60 minut</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-footage" value="1-3-hours" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>1–3 godziny</span>
+                                    </label>
+                                    <label class="quote-check-option">
+                                        <input type="radio" name="video-footage" value="over-3-hours" required>
+                                        <span class="quote-radio-mark" aria-hidden="true"></span>
+                                        <span>Ponad 3 godziny</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <fieldset class="quote-question">
+                            <legend>
+                                <span class="quote-question-number">04</span>
+                                Jakie elementy uwzględnić w montażu?
+                            </legend>
+                            <div class="quote-check-options quote-video-feature-options">
+                                <label class="quote-check-option">
+                                    <input type="checkbox" name="video-feature" value="captions">
+                                    <span class="quote-checkmark" aria-hidden="true"></span>
+                                    <span>Napisy</span>
+                                </label>
+                                <label class="quote-check-option">
+                                    <input type="checkbox" name="video-feature" value="animation">
+                                    <span class="quote-checkmark" aria-hidden="true"></span>
+                                    <span>Animacje i grafiki</span>
+                                </label>
+                                <label class="quote-check-option">
+                                    <input type="checkbox" name="video-feature" value="effects">
+                                    <span class="quote-checkmark" aria-hidden="true"></span>
+                                    <span>Efekty specjalne</span>
+                                </label>
+                                <label class="quote-check-option">
+                                    <input type="checkbox" name="video-feature" value="color">
+                                    <span class="quote-checkmark" aria-hidden="true"></span>
+                                    <span>Korekcja kolorów</span>
+                                </label>
+                                <label class="quote-check-option">
+                                    <input type="checkbox" name="video-feature" value="audio">
+                                    <span class="quote-checkmark" aria-hidden="true"></span>
+                                    <span>Udźwiękowienie i dopracowanie audio</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="quote-question">
+                            <legend>
+                                <span class="quote-question-number">05</span>
+                                Czy potrzebujesz dodatkowych wersji filmu?
+                            </legend>
+                            <p class="quote-field-help">Na przykład skróconej wersji lub wariantu dopasowanego do innej platformy.</p>
+                            <div class="quote-concept-options">
+                                <label class="quote-concept-card">
+                                    <input type="radio" name="video-versions" value="0" required>
+                                    <span class="quote-concept-label">Nie</span>
+                                </label>
+                                <label class="quote-concept-card">
+                                    <input type="radio" name="video-versions" value="1" required>
+                                    <span class="quote-concept-number">1</span>
+                                    <span class="quote-concept-label">dodatkowa</span>
+                                </label>
+                                <label class="quote-concept-card">
+                                    <input type="radio" name="video-versions" value="2" required>
+                                    <span class="quote-concept-number">2+</span>
+                                    <span class="quote-concept-label">dodatkowe</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="quote-question quote-additional-question">
+                            <label class="quote-field-label" for="video-additional">
+                                <span class="quote-question-number">06</span>
+                                Dodatkowe wskazówki <span class="quote-optional-label">opcjonalnie</span>
+                            </label>
+                            <p class="quote-field-help">Możesz opisać np. docelową platformę, styl montażu lub szczególne wymagania.</p>
+                            <textarea id="video-additional" name="video-additional" rows="3" maxlength="1000" placeholder="Opisz swoje potrzeby..."></textarea>
+                        </div>
+                    </div>
+
+                    <p class="quote-disclaimer">
+                        Suma widoczna na dole jest orientacyjna i nie stanowi wiążącej oferty.
+                    </p>
+                    <div class="quote-actions quote-actions-between">
+                        <button class="quote-button quote-button-secondary" id="quote-video-back" type="button">
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.5 10h-11m4.5 4.5L4.5 10 9 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Wróć do wyboru usługi
+                        </button>
+                        <button class="quote-button quote-button-primary quote-summary-open" type="button" data-service="video">
+                            Podsumuj projekt
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.5 10h11m-4.5-4.5L15.5 10 11 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="quote-screen quote-summary-screen" id="quote-summary-screen" aria-labelledby="quote-summary-title" hidden>
+                    <header class="quote-heading">
+                        <p class="quote-eyebrow"><span aria-hidden="true"></span> Zakres projektu i kontakt</p>
+                        <h2 id="quote-summary-title" tabindex="-1">Podsumowanie<br><span>Twojego projektu.</span></h2>
+                        <p class="quote-intro">
+                            Sprawdź wybrane opcje i orientacyjną sumę. Możesz wrócić do konfiguracji,
+                            aby zmienić odpowiedzi.
+                        </p>
+                    </header>
+
+                    <div class="quote-summary-panel">
+                        <h2 id="quote-summary-service">Zakres projektu</h2>
+                        <dl class="quote-summary-list" id="quote-summary-list"></dl>
+                        <section class="quote-price-breakdown" id="quote-price-breakdown" aria-labelledby="quote-price-breakdown-title">
+                            <h3 id="quote-price-breakdown-title">Co wpływa na cenę</h3>
+                            <dl class="quote-summary-list quote-price-lines" id="quote-price-lines"></dl>
+                            <p class="quote-estimate-legal">Przedstawiona wycena ma charakter orientacyjny i nie stanowi wiążącej oferty. Ostateczny koszt realizacji ustalany jest indywidualnie po poznaniu szczegółów projektu.</p>
+                            <p class="quote-estimate-exclusions" id="quote-estimate-exclusions">Koszty domeny, hostingu, płatnych licencji i późniejszej opieki technicznej nie są wliczone w przedstawione ceny.</p>
+                            <p class="quote-vat-note" id="quote-vat-note"></p>
+                        </section>
+                        <div class="quote-copy">
+                            <button class="quote-button quote-button-secondary quote-copy-button" id="quote-copy-button" type="button">
+                                <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                    <rect x="7" y="7" width="9" height="9" rx="1.8" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M13 7V5.2c0-.7-.5-1.2-1.2-1.2H5.2C4.5 4 4 4.5 4 5.2v6.6c0 .7.5 1.2 1.2 1.2H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span id="quote-copy-label">Kopiuj wycenę</span>
+                            </button>
+                            <p class="quote-copy-status" id="quote-copy-status" role="status">Skopiuj podsumowanie do schowka, aby zachować je lub wysłać innym kanałem.</p>
+                        </div>
+                    </div>
+
+                    <section class="quote-contact-panel" aria-labelledby="quote-contact-title">
+                        <div class="quote-contact-heading">
+                            <p class="quote-eyebrow"><span aria-hidden="true"></span> Następny krok</p>
+                            <h2 id="quote-contact-title">Wyślij zapytanie do <span>ACE Studio</span></h2>
+                            <p>Wyślemy Twoje zapytanie razem z konfiguracją i orientacyjną sumą prosto z tej strony — bez otwierania programu pocztowego. Odpowiemy na podany adres e-mail.</p>
+                        </div>
+
+                        <div class="quote-contact-form" aria-describedby="quote-contact-status">
+                            <div class="quote-contact-grid">
+                                <div class="quote-contact-field">
+                                    <label for="quote-contact-name">Imię <span>wymagane</span></label>
+                                    <input id="quote-contact-name" type="text" autocomplete="given-name" aria-describedby="quote-contact-status" placeholder="Jak mamy się do Ciebie zwracać?">
+                                </div>
+                                <div class="quote-contact-field">
+                                    <label for="quote-contact-email">Adres e-mail <span>wymagane</span></label>
+                                    <input id="quote-contact-email" type="email" autocomplete="email" aria-describedby="quote-contact-status" placeholder="np. imie@firma.pl">
+                                </div>
+                                <div class="quote-contact-field">
+                                    <label for="quote-contact-phone">Telefon <span>opcjonalnie</span></label>
+                                    <input id="quote-contact-phone" type="tel" autocomplete="tel" aria-describedby="quote-contact-status" placeholder="Numer telefonu">
+                                </div>
+                                <div class="quote-contact-field quote-contact-message">
+                                    <label for="quote-contact-message">Wiadomość <span>opcjonalnie</span></label>
+                                    <textarea id="quote-contact-message" rows="4" aria-describedby="quote-contact-status" placeholder="Napisz kilka słów o projekcie..."></textarea>
+                                </div>
+                                <div class="quote-contact-hp" aria-hidden="true">
+                                    <label for="quote-contact-website">Nie wypełniaj tego pola</label>
+                                    <input id="quote-contact-website" type="text" tabindex="-1" autocomplete="off">
+                                </div>
+                            </div>
+                            <p class="quote-contact-privacy">Administratorem danych jest Kacper Czupryński (ACE Studio). Imię, adres e-mail i telefon wykorzystamy wyłącznie do odpowiedzi na Twoje zapytanie.                             Wiadomość jest wysyłana na naszą skrzynkę e-mail, a strona nie przechowuje jej w żadnej bazie danych. Kontakt w sprawie danych: kontakt@ace-studio.pl.</p>
+                            <p class="quote-contact-status" id="quote-contact-status" role="status">
+                                                            Wpisz imię i adres e-mail, a następnie wyślij zapytanie.
+                            </p>
+                            <button class="quote-button quote-button-primary quote-contact-submit" id="quote-contact-submit" type="button">
+                                Wyślij zapytanie
+                                <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                    <path d="M3.5 10h13m-5-5 5 5-5 5M3.5 5.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+
+                    <div class="quote-actions quote-actions-between quote-summary-actions">
+                        <button class="quote-button quote-button-secondary" id="quote-summary-back" type="button">
+                            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.5 10h-11m4.5 4.5L4.5 10 9 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Wróć do konfiguracji
+                        </button>
+                        <p class="quote-step-hint">Twoje odpowiedzi pozostają na tej stronie.</p>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="../#top" aria-label="ACE Studio — strona główna">
+                        <img src="../ACE%20Studio%20LOGO.png" alt="ACE Studio" width="2168" height="725" loading="lazy">
+                    </a>
+                    <p class="footer-tagline">Twój biznes. Nasza kreatywność.<br><span>Wspólny rozwój.</span></p>
+                    <p class="footer-description">
+                        Strony internetowe, grafika komputerowa i montaż wideo — dla firm i marek,
+                        które chcą wyglądać profesjonalnie.
+                    </p>
+                </div>
+
+                <nav class="footer-column" aria-label="Nawigacja w stopce">
+                    <h2>Nawigacja</h2>
+                    <ul class="footer-list">
+                        <li><a href="../#uslugi">Usługi</a></li>
+                        <li><a href="../#dlaczego-my">Dlaczego my?</a></li>
+                        <li><a href="../#realizacje">Realizacje</a></li>
+                        <li><a href="../#kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-column" aria-label="Pomocne podstrony">
+                    <h2>Usługi</h2>
+                    <ul class="footer-list">
+                        <li><a href="../tworzenie-stron-internetowych/">Tworzenie stron internetowych</a></li>
+                        <li><a href="../projektowanie-logo/">Projektowanie logo</a></li>
+                        <li><a href="../montaz-wideo/">Montaż wideo</a></li>
+                        <li><a href="./" aria-current="page">Wycena projektu</a></li>
+                                                <li><a href="../faq/">Najczęstsze pytania</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-column footer-column-contact">
+                    <h2>Kontakt</h2>
+                    <ul class="footer-list">
+                        <li><a href="tel:+48795972775">795 972 775</a></li>
+                        <li><a href="mailto:kontakt@ace-studio.pl">kontakt@ace-studio.pl</a></li>
+                        <li><span><span class="footer-list-label">Godziny kontaktu</span>8:00–20:00</span></li>
+                    </ul>
+                    <ul class="footer-social" aria-label="Media społecznościowe">
+                        <li>
+                            <svg viewBox="0 0 24 24" role="img" aria-label="Facebook">
+                                <path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.6v1.7h-3V13h3v8h3.4Z"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" role="img" aria-label="Instagram">
+                                <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                                <circle cx="17.6" cy="6.7" r="1.1" fill="currentColor"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" role="img" aria-label="TikTok">
+                                <path fill="currentColor" d="M19.3 8.3a6.7 6.7 0 0 1-4-1.3v8.1a5.8 5.8 0 1 1-5-5.7v3.2a2.6 2.6 0 1 0 1.8 2.5V3h3.2c.2 2 1.5 3.6 4 4v1.3Z"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 ACE Studio. Wszelkie prawa zastrzeżone.</p>
+                <a href="#top">Wróć na górę ↑</a>
+            </div>
+        </div>
+    </footer>
+    <aside class="quote-total-bar" id="quote-total-panel" aria-label="Orientacyjna suma projektu" hidden>
+        <div class="quote-total-inner">
+            <div class="quote-total-copy" aria-live="polite" aria-atomic="true">
+                <span class="quote-total-label">Orientacyjna suma projektu</span>
+                <strong class="quote-total-value" id="quote-total-value">—</strong>
+                <span class="quote-total-note" id="quote-total-note">Wybierz rodzaj usługi, aby zobaczyć szacunek.</span>
+            </div>
+            <div class="quote-total-disclaimer" id="quote-total-disclaimer">
+                Kwota orientacyjna brutto — nie stanowi wiążącej oferty.
+            </div>
+        </div>
+    </aside>
+</body>
+</html>

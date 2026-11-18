@@ -1,0 +1,216 @@
+/* Elementy podstron usług. Układ, hero, nagłówki grup, FAQ i pasek końcowy pochodzą z faq/faq.css. */
+
+.svc-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.svc-card {
+    position: relative;
+    padding: 22px 22px 24px;
+    border: 1px solid #dce3e7;
+    background: #ffffff;
+    box-shadow: 0 14px 34px rgba(16, 25, 35, 0.045);
+    transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.svc-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 2px;
+    background: #09c9ef;
+}
+
+.svc-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 124, 150, 0.45);
+    box-shadow: 0 18px 40px rgba(16, 25, 35, 0.08);
+}
+
+.svc-card h3 {
+    margin: 0 0 8px;
+    color: #101923;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.svc-card p {
+    margin: 0;
+    color: #4d5b68;
+    font-size: 14.5px;
+    line-height: 1.7;
+}
+
+.svc-text {
+    display: grid;
+    gap: 14px;
+    color: #354350;
+    font-size: 15.5px;
+    line-height: 1.8;
+}
+
+.svc-text p {
+    margin: 0;
+}
+
+.svc-text a,
+.svc-note a {
+    color: #007f99;
+    font-weight: 650;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 127, 153, 0.35);
+    text-underline-offset: 3px;
+}
+
+.svc-text a:hover,
+.svc-note a:hover {
+    text-decoration-color: currentColor;
+}
+
+.svc-checklist {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.svc-checklist li {
+    position: relative;
+    padding-left: 26px;
+    color: #354350;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.svc-checklist li::before {
+    content: "";
+    position: absolute;
+    top: 0.62em;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #09c9ef;
+    box-shadow: 0 0 0 4px rgba(9, 201, 239, 0.16);
+}
+
+.svc-checklist strong {
+    color: #101923;
+}
+
+.svc-prices {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #dce3e7;
+    background: #ffffff;
+    list-style: none;
+}
+
+.svc-prices li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 16px 20px;
+}
+
+.svc-prices li + li {
+    border-top: 1px solid #e7edf0;
+}
+
+.svc-prices-name {
+    display: grid;
+    gap: 2px;
+    color: #101923;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.svc-prices-name small {
+    color: #5d6b78;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.svc-prices-value {
+    flex: none;
+    color: #006a80;
+    font-size: 15px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.svc-note {
+    margin: 14px 0 0;
+    color: #5d6b78;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.svc-related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.svc-related a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    padding: 0 18px;
+    border: 1px solid #cfdae0;
+    background: #ffffff;
+    color: #17232d;
+    font-size: 14px;
+    font-weight: 700;
+    transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.svc-related a:hover {
+    transform: translateY(-1px);
+    border-color: #007c96;
+    color: #006a80;
+}
+
+.svc-related a:focus-visible,
+.svc-text a:focus-visible,
+.svc-note a:focus-visible {
+    outline: 2px solid #007c96;
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .svc-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-prices li {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .svc-card,
+    .svc-related a {
+        transition: none;
+    }
+
+    .svc-card:hover,
+    .svc-related a:hover {
+        transform: none;
+    }
+}

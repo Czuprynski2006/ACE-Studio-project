@@ -1,0 +1,93 @@
+{
+  "currency": "PLN",
+  "priceBasis": "gross",
+  "roundTo": 10,
+  "startingFrom": {
+    "website": 800,
+    "graphic": 90,
+    "video": 300
+  },
+  "website": {
+    "minimum": 800,
+    "vatDisplay": "Podane kwoty są cenami brutto (zawierają podatek VAT).",
+    "base": {
+      "landing": 800,
+      "business": 1000,
+      "expanded": 1500,
+      "store": 2500
+    },
+    "includedPages": {
+      "landing": 1,
+      "business": 5,
+      "expanded": 10,
+      "store": 5
+    },
+    "includedProducts": 10,
+    "additionalPage": 100,
+    "additionalProduct": 20,
+    "perContentPage": 100,
+    "languageSurcharge": {
+      "perLanguage": 200
+    },
+    "features": {
+      "custom-design": 200,
+      "cms": 150,
+      "contact-form": 100,
+      "seo": 150
+    }
+  },
+  "graphic": {
+    "base": {
+      "logo": 300,
+      "identity": 1000,
+      "business-card": 100,
+      "flyer": 200,
+      "banner": 300,
+      "social-media": 90
+    },
+    "complexitySurcharge": {
+      "simple": 0,
+      "standard": 100,
+      "advanced": 300
+    },
+    "additionalConceptMultiplier": 0.5,
+    "options": {
+      "print-ready": 100,
+      "digital-formats": 100,
+      "print-formats": 100,
+      "source-files": 150
+    }
+  },
+  "video": {
+    "base": {
+      "reel": 300,
+      "tiktok": 300,
+      "advert": 600,
+      "promo": 1000
+    },
+    "durationSurcharge": {
+      "up-to-15": 0,
+      "15-30": 100,
+      "30-60": 200,
+      "over-60": 500
+    },
+    "footageSurcharge": {
+      "up-to-15": 0,
+      "15-60": 200,
+      "1-3-hours": 400,
+      "over-3-hours": 700
+    },
+    "features": {
+      "captions": 50,
+      "animation": 100,
+      "effects": 100,
+      "color": 150,
+      "audio": 200
+    },
+    "additionalVersionMultiplier": {
+      "0": 0,
+      "1": 0.5,
+      "2": 0.8
+    }
+  }
+}

@@ -1,0 +1,52 @@
+DirectoryIndex index.html
+Options -Indexes
+
+# Jedna kanoniczna wersja: https://www.ace-studio.pl (tylko dla domeny produkcyjnej).
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^(www\.)?ace-studio\.pl$ [NC]
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^ace-studio\.pl$ [NC]
+    RewriteRule ^(.*)$ https://www.ace-studio.pl/$1 [R=301,L]
+
+    # Adresy bez "index.html": /wycena/index.html -> /wycena/
+    RewriteCond %{HTTP_HOST} ^www\.ace-studio\.pl$ [NC]
+    RewriteCond %{THE_REQUEST} \s/(.*?)index\.html[\s?]
+    RewriteRule ^ https://www.ace-studio.pl/%1 [R=301,L]
+</IfModule>
+
+# Strona 404 — ścieżka dotyczy domeny produkcyjnej, gdzie strona leży w katalogu głównym.
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://norddom-drewniane.pl; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+    Header unset X-Powered-By
+    Header always unset X-Powered-By
+</IfModule>
+
+# Dostęp do plików ukrytych i konfiguracyjnych
+<FilesMatch "^\.(?!well-known)">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/ld+json image/svg+xml text/plain application/xml
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 hour"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType application/json "access plus 1 hour"
+    ExpiresByType text/css "access plus 1 day"
+    ExpiresByType application/javascript "access plus 1 day"
+    ExpiresByType text/javascript "access plus 1 day"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
